@@ -17,12 +17,12 @@ A polyglot (Java + Python) portfolio of architect-grade reference implementation
 ```mermaid
 flowchart LR
   legacy["Legacy core"] -->|CDC outbox| kafka[(Kafka backbone)]
-  fm["fintech-modernization (Java)"] --> kafka
-  pp["pricing-platform (Java)"] --> kafka
-  kafka --> lake["lakehouse-pipeline (PySpark + Delta)"]
+  fm["payments-modernization-platform (Java)"] --> kafka
+  pp["pricing-orchestration (Java)"] --> kafka
+  kafka --> lake["streaming-lakehouse-platform (PySpark + Delta)"]
   lake --> readmodels["CQRS read models + feature store"]
-  readmodels --> da["discovery-ai (Python RAG + LangGraph)"]
-  mcp["agent-mcp (Java + Python MCP)"] --> fm
+  readmodels --> da["agentic-rag-engine (Python RAG + LangGraph)"]
+  mcp["governed-mcp-gateway (Java + Python MCP)"] --> fm
   mcp --> pp
   mcp --> da
   agent["Governed agent (human-in-the-loop)"] --> mcp
@@ -32,11 +32,11 @@ flowchart LR
 
 | Repo | Lang | What it demonstrates |
 |------|------|----------------------|
-| [fintech-modernization](https://github.com/your-github-username/fintech-modernization) | Java / Spring | Strangler Fig, Anti-Corruption Layer, CDC, **CQRS + event sourcing**, orchestration **SAGA**, parallel-run reconciliation, **canary** |
-| [pricing-platform](https://github.com/your-github-username/pricing-platform) | Java / Spring | **MACH**, DDD, rules engine, approval **workflow orchestration** (Camunda/Temporal-style), **choreography SAGA**, canary |
-| [discovery-ai](https://github.com/your-github-username/discovery-ai) | Python | **Hybrid RAG** (vector + BM25 + RRF), reranking, grounded answers, guardrails, **LangGraph** agent, eval harness |
-| [agent-mcp](https://github.com/your-github-username/agent-mcp) | Java + Python | Governed **MCP** servers in both languages, **human-in-the-loop** approvals, RBAC policy, hash-chained audit |
-| [lakehouse-pipeline](https://github.com/your-github-username/lakehouse-pipeline) | Python / PySpark | **Medallion lakehouse**, **Delta Lake**, Kafka streaming, CDC ACL, CQRS read model, feature store |
+| [payments-modernization-platform](https://github.com/your-github-username/payments-modernization-platform) | Java / Spring | Strangler Fig, Anti-Corruption Layer, CDC, **CQRS + event sourcing**, orchestration **SAGA**, parallel-run reconciliation, **canary** |
+| [pricing-orchestration](https://github.com/your-github-username/pricing-orchestration) | Java / Spring | **MACH**, DDD, rules engine, approval **workflow orchestration** (Camunda/Temporal-style), **choreography SAGA**, canary |
+| [agentic-rag-engine](https://github.com/your-github-username/agentic-rag-engine) | Python | **Hybrid RAG** (vector + BM25 + RRF), reranking, grounded answers, guardrails, **LangGraph** agent, eval harness |
+| [governed-mcp-gateway](https://github.com/your-github-username/governed-mcp-gateway) | Java + Python | Governed **MCP** servers in both languages, **human-in-the-loop** approvals, RBAC policy, hash-chained audit |
+| [streaming-lakehouse-platform](https://github.com/your-github-username/streaming-lakehouse-platform) | Python / PySpark | **Medallion lakehouse**, **Delta Lake**, Kafka streaming, CDC ACL, CQRS read model, feature store |
 
 ### Industry mapping
 
