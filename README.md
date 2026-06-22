@@ -4,7 +4,7 @@
 
 20+ years architecting and hands-on building mission-critical Java/Spring and Kafka platforms (50K+ TPS, 99.99% uptime, 300+ consuming applications), modernizing legacy systems of record, and productionizing GenAI / Agentic AI. I build the patterns that regulated, high-stakes enterprises depend on -- and I can show you the code.
 
-> Replace `your-github-username` below with your handle. This file goes in a repo named exactly your username (e.g. `your-github-username/your-github-username`) to render on your GitHub profile.
+> Replace `mizbamd` below with your handle. This file goes in a repo named exactly your username (e.g. `mizbamd/mizbamd`) to render on your GitHub profile.
 
 ---
 
@@ -32,11 +32,11 @@ flowchart LR
 
 | Repo | Lang | What it demonstrates |
 |------|------|----------------------|
-| [payments-modernization-platform](https://github.com/your-github-username/payments-modernization-platform) | Java / Spring | Strangler Fig, Anti-Corruption Layer, CDC, **CQRS + event sourcing**, orchestration **SAGA**, parallel-run reconciliation, **canary** |
-| [pricing-orchestration](https://github.com/your-github-username/pricing-orchestration) | Java / Spring | **MACH**, DDD, rules engine, approval **workflow orchestration** (Camunda/Temporal-style), **choreography SAGA**, canary |
-| [agentic-rag-engine](https://github.com/your-github-username/agentic-rag-engine) | Python | **Hybrid RAG** (vector + BM25 + RRF), reranking, grounded answers, guardrails, **LangGraph** agent, eval harness |
-| [governed-mcp-gateway](https://github.com/your-github-username/governed-mcp-gateway) | Java + Python | Governed **MCP** servers in both languages, **human-in-the-loop** approvals, RBAC policy, hash-chained audit |
-| [streaming-lakehouse-platform](https://github.com/your-github-username/streaming-lakehouse-platform) | Python / PySpark | **Medallion lakehouse**, **Delta Lake**, Kafka streaming, CDC ACL, CQRS read model, feature store |
+| [payments-modernization-platform](https://github.com/mizbamd/payments-modernization-platform) | Java / Spring | Strangler Fig, Anti-Corruption Layer, CDC, **CQRS + event sourcing**, orchestration **SAGA**, parallel-run reconciliation, **canary** |
+| [pricing-orchestration](https://github.com/mizbamd/pricing-orchestration) | Java / Spring | **MACH**, DDD, rules engine, approval **workflow orchestration** (Camunda/Temporal-style), **choreography SAGA**, canary |
+| [agentic-rag-engine](https://github.com/mizbamd/agentic-rag-engine) | Python | **Hybrid RAG** (vector + BM25 + RRF), reranking, grounded answers, guardrails, **LangGraph** agent, eval harness |
+| [governed-mcp-gateway](https://github.com/mizbamd/governed-mcp-gateway) | Java + Python | Governed **MCP** servers in both languages, **human-in-the-loop** approvals, RBAC policy, hash-chained audit |
+| [streaming-lakehouse-platform](https://github.com/mizbamd/streaming-lakehouse-platform) | Python / PySpark | **Medallion lakehouse**, **Delta Lake**, Kafka streaming, CDC ACL, CQRS read model, feature store |
 
 ### Industry mapping
 
