@@ -1,6 +1,6 @@
 # Mizbauddin Mohammad
 
-**Principal Software Engineer / Enterprise Architect (TOGAF)** -- distributed systems, data & AI platforms at Fortune-1 scale.
+**Principal Software Engineer / Enterprise Architect (TOGAF)** -- distributed systems, data & AI platforms at global enterprise scale.
 
 20+ years architecting and hands-on building mission-critical Java/Spring and Kafka platforms (50K+ TPS, 99.99% uptime, 300+ consuming applications), modernizing legacy systems of record, and productionizing GenAI / Agentic AI. I build the patterns that regulated, high-stakes enterprises depend on -- and I can show you the code.
 
@@ -10,9 +10,9 @@
 
 ## Enterprise Platform Reference Architecture
 
-A polyglot (Java + Python) portfolio of architect-grade reference implementations. Each repo reframes a domain I owned at Fortune-1 scale as a domain-agnostic capability, with explicit "Industry Applicability" docs mapping the patterns to healthcare, financial services, private equity, retail, product, and restaurant enterprises.
+A polyglot (Java + Python) portfolio of architect-grade reference implementations. Each repo reframes a real platform domain built at global enterprise scale as a domain-agnostic capability, with explicit "Industry Applicability" docs mapping the patterns to healthcare, financial services, private equity, retail, product, and restaurant enterprises.
 
-> A distributed financial transaction with compensation is a **payment settlement** (Capital One / Citi), a **claims adjudication** (UnitedHealth / McKesson), a **trade/position update** (BlackRock / Blackstone), and a **price-change rollout** (Walmart). Same SAGA. Same CQRS ledger. Different nouns.
+> A distributed financial transaction with compensation is a **payment settlement** (banking), a **claims adjudication** (healthcare), a **trade/position update** (asset management), and a **price-change rollout** (retail). Same SAGA. Same CQRS ledger. Different nouns.
 
 ```mermaid
 flowchart LR
@@ -42,7 +42,7 @@ flowchart LR
 
 | Pattern | Banking | Healthcare | Asset mgmt / PE | Retail / Restaurant |
 |---|---|---|---|---|
-| Ledger + SAGA + compensation | Capital One, Citi | UnitedHealth, McKesson | BlackRock, Blackstone | CVS, Uline, McDonald's |
+| Ledger + SAGA + compensation | payments settlement | claims adjudication | trade/position settlement | order settlement / payouts |
 | Legacy modernization (Strangler/ACL/CDC) | mainframe exit | claims platform exit | OMS/portfolio exit | ERP/POS modernization |
 | Hybrid search + RAG | research/docs | clinical search | diligence Q&A | catalog/menu search |
 | Governed agents (MCP + HITL) | maker-checker | clinician sign-off | PM sign-off | manager approval |
