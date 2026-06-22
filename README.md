@@ -1,69 +1,41 @@
 # Mizbauddin Mohammad
 
-**Principal Software Engineer / Enterprise Architect (TOGAF)** -- distributed systems, data & AI platforms at global enterprise scale.
+### Principal Software Engineer / Enterprise Architect (TOGAF) — distributed systems, data & AI platforms
 
-20+ years architecting and hands-on building mission-critical Java/Spring and Kafka platforms (50K+ TPS, 99.99% uptime, 300+ consuming applications), modernizing legacy systems of record, and productionizing GenAI / Agentic AI. I build the patterns that regulated, high-stakes enterprises depend on -- and I can show you the code.
+I architect and hand-build the mission-critical platforms that regulated, high-stakes enterprises run on: **payments and ledgers at 50K+ TPS, 99.99% uptime, 300+ consuming apps** — and I'm now doing the same for **GenAI / Agentic AI** in production. Most engineers talk about these patterns. The repos below are working, tested implementations you can run in one command.
 
-> Replace `mizbamd` below with your handle. This file goes in a repo named exactly your username (e.g. `mizbamd/mizbamd`) to render on your GitHub profile.
-
----
-
-## Enterprise Platform Reference Architecture
-
-A polyglot (Java + Python) portfolio of architect-grade reference implementations. Each repo reframes a real platform domain built at global enterprise scale as a domain-agnostic capability, with explicit "Industry Applicability" docs mapping the patterns to healthcare, financial services, private equity, retail, product, and restaurant enterprises.
-
-> A distributed financial transaction with compensation is a **payment settlement** (banking), a **claims adjudication** (healthcare), a **trade/position update** (asset management), and a **price-change rollout** (retail). Same SAGA. Same CQRS ledger. Different nouns.
-
-```mermaid
-flowchart LR
-  legacy["Legacy core"] -->|CDC outbox| kafka[(Kafka backbone)]
-  fm["payments-modernization-platform (Java)"] --> kafka
-  pp["pricing-orchestration (Java)"] --> kafka
-  kafka --> lake["streaming-lakehouse-platform (PySpark + Delta)"]
-  lake --> readmodels["CQRS read models + feature store"]
-  readmodels --> da["agentic-rag-engine (Python RAG + LangGraph)"]
-  mcp["governed-mcp-gateway (Java + Python MCP)"] --> fm
-  mcp --> pp
-  mcp --> da
-  agent["Governed agent (human-in-the-loop)"] --> mcp
-```
-
-### Pinned repositories
-
-| Repo | Lang | What it demonstrates |
-|------|------|----------------------|
-| [payments-modernization-platform](https://github.com/mizbamd/payments-modernization-platform) | Java / Spring | Strangler Fig, Anti-Corruption Layer, CDC, **CQRS + event sourcing**, orchestration **SAGA**, parallel-run reconciliation, **canary** |
-| [pricing-orchestration](https://github.com/mizbamd/pricing-orchestration) | Java / Spring | **MACH**, DDD, rules engine, approval **workflow orchestration** (Camunda/Temporal-style), **choreography SAGA**, canary |
-| [agentic-rag-engine](https://github.com/mizbamd/agentic-rag-engine) | Python | **Hybrid RAG** (vector + BM25 + RRF), reranking, grounded answers, guardrails, **LangGraph** agent, eval harness |
-| [governed-mcp-gateway](https://github.com/mizbamd/governed-mcp-gateway) | Java + Python | Governed **MCP** servers in both languages, **human-in-the-loop** approvals, RBAC policy, hash-chained audit |
-| [streaming-lakehouse-platform](https://github.com/mizbamd/streaming-lakehouse-platform) | Python / PySpark | **Medallion lakehouse**, **Delta Lake**, Kafka streaming, CDC ACL, CQRS read model, feature store |
-
-### Industry mapping
-
-| Pattern | Banking | Healthcare | Asset mgmt / PE | Retail / Restaurant |
-|---|---|---|---|---|
-| Ledger + SAGA + compensation | payments settlement | claims adjudication | trade/position settlement | order settlement / payouts |
-| Legacy modernization (Strangler/ACL/CDC) | mainframe exit | claims platform exit | OMS/portfolio exit | ERP/POS modernization |
-| Hybrid search + RAG | research/docs | clinical search | diligence Q&A | catalog/menu search |
-| Governed agents (MCP + HITL) | maker-checker | clinician sign-off | PM sign-off | manager approval |
-| Lakehouse + feature store | risk/fraud | risk adjustment | signals | demand/churn |
+**Open to:** Principal / Staff Engineer · Enterprise / Solution Architect · AI Platform leadership
+**Reach me:** [LinkedIn](https://www.linkedin.com/in/mizba)
 
 ---
 
-## Core stack
-`Java` `Spring Boot` `Kafka` `gRPC` `Python` `FastAPI` `PySpark` `Delta Lake` `Kubernetes` `Docker`
-`Azure` `GCP` `AWS` `CQRS / Event Sourcing` `SAGA` `MACH` `DDD` `RAG` `LangGraph` `MCP` `Agentic AI`
+### Featured work — an Enterprise Platform Reference Architecture (Java + Python)
 
-## Certifications
-- Microsoft Certified: Agentic AI Business Solutions Architect (2026)
-- Microsoft Certified: Azure AI Engineer Associate (2025)
-- TOGAF Enterprise Architecture Part 1 & 2, v10 (2025)
+Each repo takes a domain I owned at scale and reframes it as a domain-agnostic capability, with ADRs, system-design docs, tests, CI, and one-command local runs. The same patterns map to banking, healthcare, asset management/PE, retail, and product companies.
+
+| Repository | Stack | What it proves |
+|---|---|---|
+| **[payments-modernization-platform](https://github.com/mizbamd/payments-modernization-platform)** | Java / Spring | Modernize a legacy core with **zero big-bang**: Strangler Fig, Anti-Corruption Layer, CDC, **CQRS + event sourcing**, orchestration **SAGA** + compensation, canary |
+| **[agentic-rag-engine](https://github.com/mizbamd/agentic-rag-engine)** | Python / FastAPI | Production **RAG** done right: hybrid retrieval (vector + BM25 + RRF), reranking, **grounded answers with guardrails**, LangGraph agent, eval harness |
+| **[governed-mcp-gateway](https://github.com/mizbamd/governed-mcp-gateway)** | Java + Python | Let AI agents act **safely**: governed **MCP** servers, policy engine, **human-in-the-loop** approval, hash-chained audit trail |
+| **[pricing-orchestration](https://github.com/mizbamd/pricing-orchestration)** | Java / Spring | **MACH** + DDD pricing platform: pluggable rules engine, approval **workflow orchestration**, **choreography SAGA** with rollback, canary |
+| **[streaming-lakehouse-platform](https://github.com/mizbamd/streaming-lakehouse-platform)** | Python / PySpark | **Medallion lakehouse** on **Delta Lake**: Kafka streaming + CDC, CQRS read models, feature store, data-quality quarantine |
+
+> A distributed transaction with compensation is a *payment settlement* (banking), a *claims adjudication* (healthcare), a *trade/position update* (asset management), and a *price-change rollout* (retail). Same SAGA. Same CQRS. Different nouns.
+
+---
+
+### Toolbox
+`Java` · `Spring Boot` · `Kafka` · `gRPC` · `Python` · `FastAPI` · `PySpark` · `Delta Lake` · `Kubernetes` · `Docker` · `Azure` · `GCP` · `AWS`
+`CQRS / Event Sourcing` · `SAGA` · `MACH` · `DDD` · `Strangler Fig` · `RAG` · `LangGraph` · `MCP` · `Agentic AI`
+
+### Credentials
+- Microsoft Certified: **Agentic AI** Business Solutions Architect (2026)
+- Microsoft Certified: **Azure AI Engineer** Associate (2025)
+- **TOGAF** Enterprise Architecture, Part 1 & 2 (v10, 2025)
 - Google Advanced Data Analytics Professional Certificate (2023)
-- Oracle Certified Master, Java EE 6 Enterprise Architect (2012)
+- **Oracle Certified Master**, Java EE 6 Enterprise Architect (2012)
 
-## Selected publications
-- "Managing Tombstones in Cassandra and Elastic Search," IJESAT, Vol. 24, Issue 3 (2024)
+### Writing
+- "Managing Tombstones in Cassandra and Elasticsearch," IJESAT, Vol. 24, Issue 3 (2024)
 - "Live Supplier Catalog and Pricing for Omnichannel," IJCSMC, Vol. 13, Issue 3 (2024)
-
-## Connect
-- LinkedIn: https://www.linkedin.com/in/mizba
