@@ -25,8 +25,24 @@ Each repo takes a domain I owned at scale and reframes it as a domain-agnostic c
 
 ---
 
+### Retail platform reference — *Platforms That Can't Fail* (5-repo series)
+
+Five retail subdomains I lived at scale — each repo is one technology pillar, wired together as one coherent platform story. Runnable code, ADRs, CI, Docker Compose.
+
+| # | Repository | Stack | Capability |
+|---|---|---|---|
+| 1 | **[supplier-golden-record-platform](https://github.com/mizbamd/supplier-golden-record-platform)** | Kafka · Cassandra | Multi-source **supplier MDM** → golden record + CDC distribution |
+| 2 | **[location-reference-cache](https://github.com/mizbamd/location-reference-cache)** | Redis · RabbitMQ | **Location read tier** — read-through cache, hot keys, event invalidation |
+| 3 | **[supplier-negotiation-observability](https://github.com/mizbamd/supplier-negotiation-observability)** | Elasticsearch · Logstash | **Negotiation observability** — correlation IDs, term redaction, stalled-deal SLOs |
+| 4 | **[microspace-planogram-platform](https://github.com/mizbamd/microspace-planogram-platform)** | Airflow · Flink · Cassandra | **Planogram data pipelines** — item × club × fixture at scale |
+| 5 | **[item-cost-ledger-platform](https://github.com/mizbamd/item-cost-ledger-platform)** | Temporal · Kafka · CQRS | **Item cost ledger** (keystone) — event sourcing, GraphQL + REST, Grafana SLOs |
+
+> #5 is the keystone: supplier facts (#1), club zones (#2), negotiation lineage (#3), and item context (#4) converge on an effective-dated cost ledger.
+
+---
+
 ### Toolbox
-`Java` · `Spring Boot` · `Kafka` · `gRPC` · `Python` · `FastAPI` · `PySpark` · `Delta Lake` · `Kubernetes` · `Docker` · `Azure` · `GCP` · `AWS`
+`Java` · `Spring Boot` · `Kafka` · `Temporal` · `Cassandra` · `Redis` · `Flink` · `Airflow` · `GraphQL` · `Python` · `FastAPI` · `PySpark` · `Delta Lake` · `Kubernetes` · `Docker` · `Azure` · `GCP`
 `CQRS / Event Sourcing` · `SAGA` · `MACH` · `DDD` · `Strangler Fig` · `RAG` · `LangGraph` · `MCP` · `Agentic AI`
 
 ### Credentials
