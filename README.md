@@ -53,5 +53,5 @@ Five retail subdomains I lived at scale — each repo is one technology pillar, 
 - **Oracle Certified Master**, Java EE 6 Enterprise Architect (2012)
 
 ### Writing
-- "Managing Tombstones in Cassandra and Elasticsearch," IJESAT, Vol. 24, Issue 3 (2024)
+- "Managing Tombstones in Cassandra and Elasticsearch," IJESAT, Vol. 24, Issue 3 (2024) — **[reproducible lab](https://github.com/mizbamd/cassandra-tombstone-lab)**
 - "Live Supplier Catalog and Pricing for Omnichannel," IJCSMC, Vol. 13, Issue 3 (2024)
