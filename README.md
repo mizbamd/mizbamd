@@ -6,6 +6,9 @@ I architect and hand-build the mission-critical platforms that regulated, high-s
 
 **Open to:** Principal / Staff Engineer · Enterprise / Solution Architect · AI Platform leadership
 **Reach me:** [LinkedIn](https://www.linkedin.com/in/mizba)
+**Writing:** [Medium](https://medium.com/@mizbauddin.md) · [Dev.to](https://dev.to/miz_mohammad) · [Hashnode](https://hashnode.com/@mizmohammad)
+
+> **Pinned on profile:** `payments-modernization-platform` · `item-cost-ledger-platform` · `agentic-rag-engine` · `governed-mcp-gateway` · `supplier-golden-record-platform` · `mizbamd` (this README)
 
 ---
 
@@ -38,6 +41,26 @@ Five retail subdomains I lived at scale — each repo is one technology pillar, 
 | 5 | **[item-cost-ledger-platform](https://github.com/mizbamd/item-cost-ledger-platform)** | Temporal · Kafka · CQRS | **Item cost ledger** (keystone) — event sourcing, GraphQL + REST, Grafana SLOs |
 
 > #5 is the keystone: supplier facts (#1), club zones (#2), negotiation lineage (#3), and item context (#4) converge on an effective-dated cost ledger.
+
+```mermaid
+flowchart TB
+  s1["#1 supplier golden record"] --> kafka[(Kafka)]
+  s2["#2 location cache"] --> kafka
+  s3["#3 negotiation observability"] --> elk[(ELK)]
+  s4["#4 planogram pipelines"] --> cass[(Cassandra)]
+  kafka --> s5["#5 item cost ledger\nCQRS + Temporal"]
+  cass --> s5
+  s5 --> gql["GraphQL + REST read APIs"]
+  s5 --> mcp["governed-mcp-gateway\nmerchandising tools"]
+```
+
+### Research & focused labs
+
+| Lab | What it proves |
+|---|---|
+| **[cassandra-tombstone-lab](https://github.com/mizbamd/cassandra-tombstone-lab)** | Published IJESAT research — reproducible tombstone/compaction experiments |
+| **[structured-streaming-retail-slo](https://github.com/mizbamd/structured-streaming-retail-slo)** | Supplier CDC freshness + cost projection lag SLOs (Structured Streaming) |
+| **[quantum-retail-optimization-lab](https://github.com/mizbamd/quantum-retail-optimization-lab)** | QUBO shelf allocation vs classical greedy (simulator-only) |
 
 ---
 
