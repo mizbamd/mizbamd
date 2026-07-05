@@ -2,9 +2,9 @@
 
 ### Director-scope Platform & Enterprise Architecture (TOGAF) — Principal Software Engineer, Sr. Manager II
 
-I lead platform and enterprise architecture programs at Fortune-1 scale — **managing principal, staff, and solutions architects** alongside engineering managers and tech leads, not just developers. My organization spans **45+ engineers, architects, and managers**; **80+ engineers** across eight cross-functional teams; and systems consumed by **300+ enterprise applications** at **50K+ TPS** and **99.99% uptime**. Recent outcomes include **$5.1M+ annual cloud savings** (FinOps + architecture), **$1.2M mainframe retirement**, and **governed GenAI/agentic platforms** in production.
+I lead platform and enterprise architecture programs at Fortune-1 scale — **managing staff and solutions architects** alongside engineering managers, tech leads, and developers. My organization spans **45+ engineers, architects, and managers**; **80+ engineers** across eight cross-functional teams; and systems consumed by **300+ enterprise applications** at **50K+ TPS** and **99.99% uptime**. Recent outcomes include **$5.1M+ annual cloud savings** (FinOps + architecture), **$1.2M mainframe retirement**, and **governed GenAI/agentic platforms** in production.
 
-I am a **player-coach for architects** — I set enterprise architecture direction, ADR standards, and review-board bar; I coach **15+ senior, staff, and principal engineers into architecture and leadership roles**. The repositories below are an **open Enterprise Platform Reference Architecture**: runnable ADRs, system design, CI, and one-command local runs — the reference patterns I expect architects on my teams to deliver, published for regulated industries (banking, healthcare, insurance, retail).
+I am a **player-coach for architects** — I set enterprise architecture direction, ADR standards, and review-board bar; I coach **15+ senior and staff engineers into architecture and leadership roles**. The repositories below are an **open Enterprise Platform Reference Architecture**: runnable ADRs, system design, CI, and one-command local runs — the reference patterns I expect architects on my teams to deliver, published for regulated industries (banking, healthcare, insurance, retail).
 
 **Reach me:** [LinkedIn](https://www.linkedin.com/in/mizba) · [Medium](https://medium.com/@mizbauddin.md)
 
@@ -16,9 +16,9 @@ I am a **player-coach for architects** — I set enterprise architecture directi
 
 | Dimension | Scale |
 |---|---|
-| **Architect org** | Manage **principal, staff, and solutions architects** plus engineering managers — not only dev leads or IC developers |
+| **Architect org** | Manage **staff and solutions architects** plus engineering managers and tech leads — not only IC developers |
 | **Organization** | 45+ engineers, architects, and managers; 8 cross-functional teams (~80 engineers) |
-| **Talent** | Coach and develop **15+ senior/staff engineers into architecture and leadership**; raise principal-architect bar across domains |
+| **Talent** | Coach and develop **15+ senior/staff engineers into architecture and leadership**; raise architecture bar across domains |
 | **Business outcomes** | $5.1M+ annual cloud savings · $1.2M mainframe OPEX eliminated · ~50% deployment frequency improvement |
 | **Platform scale** | 50K+ TPS · 99.99% uptime · 300+ consuming applications |
 | **Programs** | Merchandising cost/price/negotiations · supply chain · space · analytics · data & AI platform modernization |
