@@ -70,6 +70,7 @@ flowchart TB
 
 | Lab | What it proves |
 |---|---|
+| **[finops-platform-landing-zone](https://github.com/mizbamd/finops-platform-landing-zone)** | Azure landing zone IaC — FinOps tags, budgets, AKS, Event Hubs, Databricks, Cosmos/Redis |
 | **[cassandra-tombstone-lab](https://github.com/mizbamd/cassandra-tombstone-lab)** | IJESAT 2024 research — reproducible tombstone/compaction experiments |
 | **[structured-streaming-retail-slo](https://github.com/mizbamd/structured-streaming-retail-slo)** | Supplier CDC freshness + cost projection lag SLOs |
 | **[quantum-retail-optimization-lab](https://github.com/mizbamd/quantum-retail-optimization-lab)** | QUBO shelf allocation vs classical greedy (simulator) |
@@ -77,8 +78,8 @@ flowchart TB
 ---
 
 ### Toolbox
-`Java` · `Spring Boot` · `Kafka` · `Temporal` · `Cassandra` · `Redis` · `Flink` · `Airflow` · `GraphQL` · `Python` · `FastAPI` · `PySpark` · `Delta Lake` · `Kubernetes` · `Docker` · `Azure` · `GCP`  
-`CQRS / Event Sourcing` · `SAGA` · `MACH` · `DDD` · `Strangler Fig` · `RAG` · `LangGraph` · `MCP` · `Agentic AI` · `TOGAF`
+`Java` · `Spring Boot` · `Kafka` · `Temporal` · `Cassandra` · `Redis` · `Flink` · `Airflow` · `GraphQL` · `Python` · `FastAPI` · `PySpark` · `Delta Lake` · `Kubernetes` · `Docker` · `Azure` · `GCP` · `Terraform`  
+`CQRS / Event Sourcing` · `SAGA` · `MACH` · `DDD` · `Strangler Fig` · `RAG` · `LangGraph` · `MCP` · `Agentic AI` · `TOGAF` · `FinOps`
 
 ### Credentials
 - Microsoft Certified: **Agentic AI** Business Solutions Architect (2026)
