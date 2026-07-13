@@ -70,6 +70,7 @@ flowchart TB
 
 | Lab | What it proves |
 |---|---|
+| **[ai-kafka-api-lakehouse](https://github.com/mizbamd/ai-kafka-api-lakehouse)** | AI + Kafka + APIs + lakehouse — complementary paths, no shadow integration |
 | **[multitenant-ai-scale-finops](https://github.com/mizbamd/multitenant-ai-scale-finops)** | Multi-tenant AI — isolation, scale controls, cost per successful transaction |
 | **[bounded-agentic-orchestration](https://github.com/mizbamd/bounded-agentic-orchestration)** | Bounded agentic design — mode selector, policy/HITL/audit, supervisor multi-agent |
 | **[scalable-enterprise-rag](https://github.com/mizbamd/scalable-enterprise-rag)** | Dual-path enterprise RAG — offline prep + online hybrid, ACL, abstain, ops metrics |
