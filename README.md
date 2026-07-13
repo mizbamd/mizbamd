@@ -70,6 +70,7 @@ flowchart TB
 
 | Lab | What it proves |
 |---|---|
+| **[enterprise-ai-platform-planes](https://github.com/mizbamd/enterprise-ai-platform-planes)** | Five-plane enterprise AI architecture — model gateway, facade APIs, control/FinOps |
 | **[finops-platform-landing-zone](https://github.com/mizbamd/finops-platform-landing-zone)** | Azure landing zone IaC — FinOps tags, budgets, AKS, Event Hubs, Databricks, Cosmos/Redis |
 | **[cassandra-tombstone-lab](https://github.com/mizbamd/cassandra-tombstone-lab)** | IJESAT 2024 research — reproducible tombstone/compaction experiments |
 | **[structured-streaming-retail-slo](https://github.com/mizbamd/structured-streaming-retail-slo)** | Supplier CDC freshness + cost projection lag SLOs |
