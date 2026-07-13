@@ -70,6 +70,7 @@ flowchart TB
 
 | Lab | What it proves |
 |---|---|
+| **[scalable-enterprise-rag](https://github.com/mizbamd/scalable-enterprise-rag)** | Dual-path enterprise RAG — offline prep + online hybrid, ACL, abstain, ops metrics |
 | **[enterprise-ai-platform-planes](https://github.com/mizbamd/enterprise-ai-platform-planes)** | Five-plane enterprise AI architecture — model gateway, facade APIs, control/FinOps |
 | **[finops-platform-landing-zone](https://github.com/mizbamd/finops-platform-landing-zone)** | Azure landing zone IaC — FinOps tags, budgets, AKS, Event Hubs, Databricks, Cosmos/Redis |
 | **[cassandra-tombstone-lab](https://github.com/mizbamd/cassandra-tombstone-lab)** | IJESAT 2024 research — reproducible tombstone/compaction experiments |
